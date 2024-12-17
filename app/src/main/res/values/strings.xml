@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GameNhamNham</string>
+    <string name="titulo">Jogo Nham Nham</string>
+    <string name="button1">Iniciar Jogo</string>
+    <string name="button2">Regras</string>
+    <string name="regra">Regras do Jogo:\n1. Alinhe três Gobblers.\n2. Movimentos válidos:\n   - Adicionar peça sobre espaço vazio.\n   - Colocar peça maior sobre menor.\n3. Vence quem alinhar primeiro.</string>
+    <string name="voltar">Voltar</string>
+</resources>
