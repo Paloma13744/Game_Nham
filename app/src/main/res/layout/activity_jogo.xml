@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".JogoActivity">
 
-
-    <LinearLayout
+    <!-- Peças do jogador 1 -->
+    <GridLayout
         android:id="@+id/jog1_pieces_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="253dp"
+        android:layout_height="87dp"
         android:orientation="horizontal"
-        android:layout_marginTop="16dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/border"
-        >
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border">
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/p1"
-            android:contentDescription="Peça pequena jogador 1"/>
-
-
-        <ImageView
-            android:layout_width="100dp"
+            android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/m1"
-            android:layout_marginStart="16dp"
-            android:contentDescription="Peça media jogador 1"/>
-
+            android:src="@drawable/p1"
+            android:contentDescription="Peça pequena jogador 1" />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="Peça média jogador 1"
+            android:src="@drawable/m1" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/g1"
             android:layout_marginStart="16dp"
-            android:contentDescription="Peça grande jog 1"/>
-    </LinearLayout>
+            android:contentDescription="Peça grande jogador 1" />
+    </GridLayout>
 
     <!-- Tabuleiro central -->
     <GridLayout
@@ -57,122 +57,180 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/jogo">
 
-        <!-- Célula (0,0) -->
+        <!-- Células do tabuleiro -->
         <ImageView
+            android:id="@+id/cell_00"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:contentDescription="" />
+            android:contentDescription="Célula 0,0" />
 
-        <!-- Célula (0,1) -->
         <ImageView
+            android:id="@+id/cell_01"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:contentDescription="" />
+            android:contentDescription="Célula 0,1" />
 
-        <!-- Célula (0,2) -->
         <ImageView
+            android:id="@+id/cell_02"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_row="0"
-            android:layout_column="2"
-            android:contentDescription="" />
+            android:contentDescription="Célula 0,2" />
 
-        <!-- Célula (1,0) -->
         <ImageView
+            android:id="@+id/cell_10"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_row="1"
-            android:layout_column="0"
-            android:contentDescription="" />
+            android:contentDescription="Célula 1,0" />
 
-        <!-- Célula (1,1) -->
         <ImageView
+            android:id="@+id/cell_11"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:contentDescription="" />
+            android:contentDescription="Célula 1,1" />
 
-        <!-- Célula (1,2) -->
         <ImageView
+            android:id="@+id/cell_12"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_row="1"
-            android:layout_column="2"
-            android:contentDescription="" />
+            android:contentDescription="Célula 1,2" />
 
-        <!-- Célula (2,0) -->
         <ImageView
+            android:id="@+id/cell_20"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_row="2"
-            android:layout_column="0"
-            android:contentDescription="" />
+            android:contentDescription="Célula 2,0" />
 
-        <!-- Célula (2,1) -->
         <ImageView
+            android:id="@+id/cell_21"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_row="2"
-            android:layout_column="1"
-            android:contentDescription="" />
+            android:contentDescription="Célula 2,1" />
 
-        <!-- Célula (2,2) -->
         <ImageView
+            android:id="@+id/cell_22"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_row="2"
-            android:layout_column="2"
-            android:contentDescription="" />
-
-
-
-
+            android:contentDescription="Célula 2,2" />
     </GridLayout>
 
-    <!-- LinearLayout com peças do jogador 2 na parte inferior -->
-    <LinearLayout
-        app:layout_goneMarginTop="50dp"
+    <!-- Peças do jogador 2 -->
+    <GridLayout
         android:id="@+id/jog2_pieces_layout"
+        android:layout_width="253dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border2"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gridLayoutTabuleiro">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="0dp"
+            android:contentDescription="Peça pequena jogador 2"
+            android:src="@drawable/p2" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="Peça média jogador 2"
+            android:src="@drawable/m2" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginStart="16dp"
+            android:contentDescription="Peça grande jogador 2"
+            android:src="@drawable/g2" />
+    </GridLayout>
+
+    <!-- Contadores de peças do jogador 1 -->
+    <TextView
+        android:id="@+id/jog1SmallCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/gridLayoutTabuleiro"
+        android:text=" 3"
+        android:textSize="20sp"
+        android:layout_marginLeft="110dp"
+        app:layout_constraintTop_toBottomOf="@id/jog1_pieces_layout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/border2">
+        android:layout_marginTop="8dp" />
 
+    <TextView
+        android:id="@+id/jog1MediumCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/jog1_pieces_layout"
+        app:layout_constraintLeft_toRightOf="@+id/jog1SmallCount"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="8dp" />
 
-        <ImageView
-            android:layout_marginTop="15dp"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/p2"
-            android:contentDescription="Peça pequena jog2"/>
+    <TextView
+        android:id="@+id/jog1LargeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:layout_marginLeft="75dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/jog1_pieces_layout"
+        app:layout_constraintLeft_toRightOf="@id/jog1MediumCount"
+        android:layout_marginTop="8dp" />
 
+    <!-- Contadores de peças do jogador 2 -->
+    <TextView
+        android:id="@+id/jog2SmallCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/jog2_pieces_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="8dp" />
 
-        <ImageView
-            android:layout_marginTop="15dp"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:src="@drawable/m2"
-            android:layout_marginStart="16dp"
-            android:contentDescription="Peça média jog2"/>
+    <TextView
+        android:id="@+id/jog2MediumCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/jog2_pieces_layout"
+        app:layout_constraintLeft_toRightOf="@id/jog2SmallCount"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="8dp" />
 
-        <!-- Peça grande jog 2 -->
-        <ImageView
-            android:layout_marginTop="15dp"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/g2"
-            android:layout_marginStart="16dp"
-            android:contentDescription="Peça grande jog2"/>
-    </LinearLayout>
+    <TextView
+        android:id="@+id/jog2LargeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/jog2_pieces_layout"
+        app:layout_constraintLeft_toRightOf="@+id/jog2MediumCount"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="8dp" />
 
+    <!-- Indicador de turno -->
+    <TextView
+        android:id="@+id/turnIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jogador 1: Sua vez!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/jog2LargeCount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

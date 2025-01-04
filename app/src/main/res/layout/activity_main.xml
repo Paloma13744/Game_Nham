@@ -38,7 +38,7 @@
 
 
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/startButton"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
 
 
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/regrasButton"
         android:layout_width="350dp"
         android:layout_height="wrap_content"

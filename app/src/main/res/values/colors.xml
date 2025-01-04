@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="verde_agua">#0097b2</color>
     <color name="laranja">#ff914d</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="transparent">#00000000</color> <!-- Cor totalmente transparente -->
 </resources>
