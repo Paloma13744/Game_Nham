@@ -333,7 +333,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/verde_agua"
-        android:text="Placar"
+        android:text="Empate"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_margin="20dp"
@@ -371,18 +371,16 @@
 
 
     <TextView
-        android:id="@+id/pointsX"
+        android:id="@+id/pointsEmpates"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/verde_agua"
-        android:text="X"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_margin="20dp"
+        android:text="0"
+        android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/points"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/points"
+        app:layout_constraintRight_toRightOf="@id/points"
+
 
         />
 
@@ -392,11 +390,10 @@
         android:layout_height="wrap_content"
         android:text="0"
         android:textColor="@color/verde_agua"
-        android:layout_marginLeft="140dp"
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/player2Text"
-        app:layout_constraintLeft_toRightOf="@id/pointsX"
-        android:layout_marginTop="2dp"
+        app:layout_constraintLeft_toLeftOf="@id/player2Text"
+        app:layout_constraintRight_toRightOf="@id/player2Text"
 
         />
 
@@ -406,13 +403,22 @@
         android:layout_height="wrap_content"
         android:text="0"
         android:textColor="@color/verde_agua"
-        android:layout_marginRight="140dp"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/player2Text"
-        app:layout_constraintRight_toLeftOf="@id/pointsX"
+        app:layout_constraintTop_toBottomOf="@+id/player1Text"
+        app:layout_constraintLeft_toLeftOf="@+id/player1Text"
+        app:layout_constraintRight_toRightOf="@+id/player1Text"
         android:layout_marginTop="2dp"
 
         />
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/victoryAnimation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:lottie_rawRes="@raw/victory_animation"-->
+<!--        app:lottie_loop="false"-->
+<!--        app:lottie_autoPlay="false"-->
+<!--        android:visibility="gone" />-->
 
 
 
