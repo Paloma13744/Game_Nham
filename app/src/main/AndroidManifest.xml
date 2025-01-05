@@ -29,6 +29,7 @@
         <!-- Registering RegrasActivity -->
         <activity android:name=".RegrasActivity" android:exported="true" />
 
+
     </application>
 
 </manifest>

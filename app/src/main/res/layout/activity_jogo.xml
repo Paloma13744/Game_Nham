@@ -319,7 +319,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="18dp"
         android:layout_marginTop="20dp"
-        android:text="Reiniciar"
+        android:text="Jogar nova rodada"
         android:background="@color/verde_agua"
         android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/turnIndicator"
@@ -346,7 +346,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/verde_agua"
-        android:text="Player 1"
+        android:text="Jogador 1"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_margin="20dp"
@@ -360,7 +360,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/verde_agua"
-        android:text="Player 2"
+        android:text="Jogador 2"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_margin="20dp"
@@ -411,14 +411,6 @@
 
         />
 
-<!--    <com.airbnb.lottie.LottieAnimationView-->
-<!--        android:id="@+id/victoryAnimation"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:lottie_rawRes="@raw/victory_animation"-->
-<!--        app:lottie_loop="false"-->
-<!--        app:lottie_autoPlay="false"-->
-<!--        android:visibility="gone" />-->
 
 
 
