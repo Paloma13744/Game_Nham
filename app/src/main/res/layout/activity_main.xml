@@ -18,14 +18,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/imageNhamNham"
         android:layout_marginBottom="12dp"
         android:layout_marginTop="35dp"
         android:fontFamily="@font/poppins"/>
 
     <!-- Nova ImageView adicionada -->
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageNhamNham"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:src="@drawable/fundo_nham"
@@ -34,7 +34,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/startButton"
-        android:layout_marginBottom="5dp"/>
+        android:layout_marginBottom="16dp"/>
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/icone"
+        android:contentDescription="Next music"
+        app:layout_constraintTop_toBottomOf="@id/regrasButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/btnPlayAndPause"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:src="@drawable/pausar"
+        android:background="@android:color/transparent"
+        android:contentDescription="Next music"
+        app:layout_constraintTop_toBottomOf="@id/regrasButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnNext"
+        />
+
+
+    <ImageButton
+        android:id="@+id/btnSilenciar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/silenciar"
+        android:background="@android:color/transparent"
+        android:contentDescription="Next music"
+        app:layout_constraintTop_toBottomOf="@id/regrasButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnNext"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
 
 
 
@@ -50,7 +92,7 @@
         android:background="@color/verde_agua"
         android:textColor="@color/white"
         android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageNhamNham"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/regrasButton"
@@ -65,7 +107,7 @@
         android:layout_marginRight="18dp"
         android:layout_height="wrap_content"
         android:text="@string/button2"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="12dp"
         android:fontFamily="@font/poppins"
         android:background="@color/verde_agua"
         android:layout_marginTop="5dp"
@@ -73,7 +115,7 @@
         app:layout_constraintTop_toBottomOf="@+id/startButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/btnNext"
         android:textAllCaps="false" />
 
 

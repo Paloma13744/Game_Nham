@@ -13,7 +13,7 @@ class RegrasActivity : AppCompatActivity() {
         binding = ActivityRegrasBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Configurar o clique do botão "Voltar"
+
         binding.backButton.setOnClickListener {
             finish()
         }

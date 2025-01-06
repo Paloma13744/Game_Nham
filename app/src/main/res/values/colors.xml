@@ -6,4 +6,5 @@
     <color name="laranja">#ff914d</color>
     <color name="teal_200">#03DAC5</color>
     <color name="transparent">#00000000</color>
+    <color name="background">#d6d7d7</color>
 </resources>
