@@ -2,6 +2,7 @@
 
 **Nham Nham** é um jogo de tabuleiro inspirado no clássico **Nhac Nhac**. Com uma jogabilidade estratégica e inovadora, o objetivo é alinhar três peças do mesmo jogador em sequência, seja na horizontal, vertical 
 ou diagonal. O jogo oferece uma experiência única ao permitir que peças maiores se sobreponham a peças menores no tabuleiro.
+Créditos ao jogo original: [Regras Nhac Nhac](https://ludoteca.spleituras.org.br/arquivos/jogos-41-regras-nhac.pdf).  
 
 ![image](https://github.com/user-attachments/assets/3420658c-3765-4ab6-b25f-1a17c9f81645)
 
